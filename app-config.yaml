@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: crud-config
+data:
+  GREETING: Hello-Test
+---
+kind:apiVersion: v1
+kind: Secret
+metadata:
+  name: crud-secret
+type: Opaque
+data:
+  DATABASE_URI: mongodb://localhost:27017/kbtu-sa
+
